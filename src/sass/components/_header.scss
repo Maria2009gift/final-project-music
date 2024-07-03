@@ -6,28 +6,25 @@
 }
 
 .container-header {
-    background-image: url(../img/bg-header-m.webp);
+    background-image: url(../img/bg-header-m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
-    @media screen and (min-width: 768px){
-        background-image: url(../img/bg-header-t.webp);
-    
-    }
-    
-    @media screen and (min-width: 1280px){
-        background-image: url(../img/bg-header-d.webp);
-    
-    }
 }
 
-// @media screen and (min-width: 320px){
-//     .container-header {
-//         background-image: url(../img/bg-header-m.webp);
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//     }
-// }
+@media screen and (min-width: 768px){
+    .container-header {
+        background-image: url(../img/bg-header-t.jpg);
+    }
+
+}
+
+@media screen and (min-width: 1280px){
+    .container-header {
+        background-image: url(../img/bg-header-d.jpg);
+    }
+
+}
+
 
 
 

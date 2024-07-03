@@ -1,1 +1,4 @@
-import "./sass/index.scss"
+ 
+import "./sass/index.scss";
+
+import "./js/modal";
