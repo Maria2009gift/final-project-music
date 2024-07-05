@@ -17,10 +17,9 @@
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
-  
-    "engines": {
+  "engines": {
     "node": "10"
-    },
+  },
   "dependencies": {
     "modern-normalize": "^1.1.0"
   },
