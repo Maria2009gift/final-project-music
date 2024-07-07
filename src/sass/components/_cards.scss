@@ -1,0 +1,31 @@
+
+.container-events {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc((100% - 4 * 2px) / 2);
+}
+
+@media screen and (min-width: 768px){
+    .card {
+        width: calc((100% - 6 * 2px) / 3);
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .card {
+        width: calc((100% - 8 * 2px) / 4);
+    }
+}
+
+
+
+
+
+
+
+
+
+
