@@ -1,11 +1,24 @@
 
 
 .icon-booster{
-    width: 136px;
-    height: 67px;
+    fill: white;
+    width: 60px;
+    height: 30px;
+    flex-shrink: 0;
+    margin: 24px 0 0 24px;
+}
+
+.find{
+    color: #DC56C5;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 .container-header {
+    height: 270px;
     background-image: url(../img/bg-header-m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,15 +27,34 @@
 @media screen and (min-width: 768px){
     .container-header {
         background-image: url(../img/bg-header-t.jpg);
+        height: 340px;
     }
 
+    .find{
+        font-size: 30px;
+    }
+
+    .icon-booster{
+        width: 100px;
+        height: 50px;
+        margin: 40px 0 0 40px;
+    }
 }
 
 @media screen and (min-width: 1280px){
     .container-header {
         background-image: url(../img/bg-header-d.jpg);
+        height: 450px;
     }
 
+    .find{
+        font-size: 50px;
+    }
+
+    .icon-booster{
+        width: 136px;
+        height: 68px;
+    }
 }
 
 
