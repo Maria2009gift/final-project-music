@@ -1,0 +1,20 @@
+.find{
+    color: #DC56C5;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+@media screen and (min-width: 768px){
+    .find{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .find{
+        font-size: 50px;
+    }
+}
