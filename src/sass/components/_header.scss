@@ -15,10 +15,20 @@
     background-size: cover;
 }
 
+.overlay {
+    height: 270px;
+    background-color: rgba(11, 11, 11, 0.5);
+    z-index: 2;
+}
+
 @media screen and (min-width: 768px){
     .container-header {
         background-image: url(../img/bg-header-t.jpg);
         height: 340px;
+    }
+
+    .overlay {
+        height: 340px;        
     }
 
     .icon-booster{
@@ -32,6 +42,10 @@
     .container-header {
         background-image: url(../img/bg-header-d.jpg);
         height: 450px;
+    }
+
+    .overlay {
+        height: 450px;        
     }
 
     .icon-booster{
