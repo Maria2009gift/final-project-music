@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .search-event {
@@ -22,20 +23,21 @@
     font-size: 16px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .container-inputs-header {
+        display: flex;
+        justify-content: center;
         flex-direction: row;
-        padding: 0 100px;
-        justify-content: space-evenly;
+        align-items: center;
     }
 
     .search-event {
-        margin-bottom: 0;
+        margin-right: 30px;
     }
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
     .container-inputs-header {
-        padding: 0 355px;
+        margin-top: 50px;
     }
 }
