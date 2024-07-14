@@ -12,3 +12,13 @@
     line-height: normal;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.wrap-main {
+  flex: 1 0 auto;
+}

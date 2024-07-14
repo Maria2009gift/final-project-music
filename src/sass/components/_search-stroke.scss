@@ -18,6 +18,24 @@
 }
 
 .search-event::placeholder {
-    color: #939393;
+    color: #434343;
     font-size: 16px;
+}
+
+@media screen and (min-width: 768px){
+    .container-inputs-header {
+        flex-direction: row;
+        padding: 0 100px;
+        justify-content: space-evenly;
+    }
+
+    .search-event {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container-inputs-header {
+        padding: 0 355px;
+    }
 }
