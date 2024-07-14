@@ -1,4 +1,8 @@
 
+.wrap-main {
+    background-color: #0d0d0d;
+}
+
 .container-events {
     display: flex;
     flex-wrap: wrap;
@@ -20,12 +24,9 @@
     }
 }
 
-
-
-
-
-
-
-
+.load-more {
+    text-align: center;
+    color: #939393;
+}
 
 
