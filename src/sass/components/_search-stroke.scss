@@ -23,6 +23,18 @@
     font-size: 16px;
 }
 
+.search-container {
+    padding: 0;
+}
+
+.search-btn {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -50px;
+    background-color: inherit;
+    border: none;
+}
+
 @media screen and (min-width: 768px) {
     .container-inputs-header {
         display: flex;
@@ -33,6 +45,14 @@
 
     .search-event {
         margin-right: 30px;
+    }
+
+    .search-btn {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -78px;
+        background-color: inherit;
+        border: none;
     }
 }
 
