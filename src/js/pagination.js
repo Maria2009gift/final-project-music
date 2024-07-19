@@ -1,3 +1,4 @@
+import debounce from 'debounce';
 
 const containerOfEvents = document.querySelector("#container-events-js")
 const btnLoadMore = document.querySelector("#load-more-js")
@@ -44,13 +45,17 @@ function loadMore() {
 
 }
 
-function searchContent() {
-    
-}
-
 container.addEventListener("click", getValue)
+searchBtn.addEventListener("click", loadMore)
 btnLoadMore.addEventListener("click", loadMore)
-// searchBtn.addEventListener("click", searchContent)
+// searchEvent.addEventListener('input', debounce(loadMore, 250))
+window.addEventListener("keyup", (e) => {
+    e.preventDefault
+    if (e.code === "Enter") {
+        loadMore()
+    }
+})
+
 
 
 
