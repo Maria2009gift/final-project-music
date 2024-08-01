@@ -1,82 +1,161 @@
-.modal{
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: auto;
     background-color: rgb(0, 0, 0,0.8);
-
- 
 }
 
-.model-content{
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+.modal-content {
+    background-color: #FFF2FD;
+    margin: 10px auto;
+    padding-top: 25px;
+    padding: 25px 15px;
+
     border: 1px solid #888;
-    width: 80%;
-    border-radius: 50px 0px;
+    width: 85%;
+    height: 97%;
+    border-radius: 150px 0px;
 }
-.close{
-    color: blue;
+.close {
+    fill: blue;
+    width: 17px;
+    height: 17px;
+    margin-bottom: 33px;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.kvadrat{
-    width: 360px;
-    height: 641px;
+.kvadrat {
+    display: none;
+    width: 233px;
+    height: 416px;
     
 }
-.buy{
-    width: 145px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #003bfc;
-    color: white;
-}
-.inf{
-    width: 145px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #003bfc;
-    color: white;
-}
-h2{
-    color: rgb(255, 30, 172);
-}
-.kolo{
-    width: 132px;
-    height: 132px;
+.kolo {
+    width: 102px;
+    height: 102px;
     border-radius: 50%;
+    margin: 0 auto;
+    display: block;
 }
-.text{
+ 
+.wrapper-content {
     display: flex;
+    column-gap: 30px;
+    margin-top: 8px;
 }
-@media screen and (min-width:480px) {
-    .modal{
-        width: 272px;
-        height: 915px;
 
-    }
+.standart {
+    margin-bottom: 20px;
+}
+
+.vip {
+    margin-bottom: 36px;
+}
+
+.buy {
+    display: block;
+    margin: 0 auto;
+    width: 145px;
+    height: 40px;
+    border-radius: 5px; 
+    background-color: #4C00FE;
+
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.inf {
+    display: block;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #4C00FE; 
+    background-color: #FFF2FD;
+    padding: 10px 0;
+    margin: 0 auto;
+
+    color: #4C00FE;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-text {
+    color: #DC56C5;
+
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px 0 0 0;
+
+}
+
+.p-text {
+    color: #0E0E0E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.p-prices {
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 @media screen and (min-width:768px) {
-.modal{
-    width: 595px;
-    height: 831px;
+    .modal-content {
+        width: 595px;
+    }
 
-}
+    .kvadrat {
+        display: block;
+        width: 233px;
+        height: 416px;
+    }
+
+    .title-text {
+        text-align: left;
+    }
+
+    .p-text {
+        text-align: left;
+    }    
+
+    .buy {
+        margin: 0;
+    }
 }
 
-@media screen and (min-width:1200px) {
-.modal{
-    width: 942px;
-    height: 1023px;
+@media screen and (min-width:1280px) {
+    .modal-content {
+        width: 900px;
+        padding: 0 30px;
+    }
 
-}
+    .kvadrat {
+        width: 360px;
+        height: 641px;
+    }
+
+    .wrapper-content {
+        margin-bottom: 36px;
+    }
 }
