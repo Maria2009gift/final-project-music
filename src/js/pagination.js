@@ -33,7 +33,7 @@ function loadMore() {
 
                 containerOfEvents.insertAdjacentHTML("beforeend", `
                     <div class="card">
-                    <img src="" alt="">
+                    <img class="img-card" src="${event.images[0].url}" alt="">
                     <h5 class="title-event" id="title-event-js">${event.name}</h5>
                     <p class="date" id="date-js">${event.dates.start.localDate}</p>
                     <p class="place" id="place-js">${event._embedded.venues[0].name}</p>

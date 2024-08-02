@@ -6,15 +6,58 @@
 .container-events {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 5px;
 }
 
 .card {
-    width: calc((100% - 4 * 2px) / 2);
+    margin: 0 auto;
+    width: calc((100% - 5px) / 2);
+}
+
+.img-card {
+    width: 128px;
+    height: 161px;
+    flex-shrink: 0;
+    border-radius: 50px 0px;
+    margin: 0 auto;
+}
+
+.title-event {
+    color: #DC56C5;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.date {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.place {
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 @media screen and (min-width: 768px){
     .card {
         width: calc((100% - 6 * 2px) / 3);
+    }
+
+    .img-card {
+        width: 180px;
+        height: 227px;
     }
 }
 
