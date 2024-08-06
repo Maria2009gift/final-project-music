@@ -27,16 +27,15 @@ function loadMore() {
     fetch(`${BASE_ID}?apikey=G9QyoGR1xwN3XvcF7b5mopd7Xn36MiG5&page=${sizeNumb}&size=20&countryCode=${valueCountry}&keyword=${searchValue}`)
         .then(response => response.json())
         .then(events => {
-            console.log(events);
-            // console.log(`${BASE_ID}?apikey=G9QyoGR1xwN3XvcF7b5mopd7Xn36MiG5&page=${sizeNumb}&size=20&countryCode=${valueCountry}&keyword=Pink`);
+            console.log(events)
             for (const event of events._embedded.events) {
 
                 containerOfEvents.insertAdjacentHTML("beforeend", `
                     <div class="card">
-                    <img class="img-card" src="${event.images[0].url}" alt="">
-                    <h5 class="title-event" id="title-event-js">${event.name}</h5>
-                    <p class="date" id="date-js">${event.dates.start.localDate}</p>
-                    <p class="place" id="place-js">${event._embedded.venues[0].name}</p>
+                        <img class="img-card" id="${event.id}" src="${event.images[0].url}" alt="">
+                        <h5 class="title-event" id="title-event-js">${event.name}</h5>
+                        <p class="date" id="date-js">${event.dates.start.localDate}</p>
+                        <p class="place" id="place-js">${event._embedded.venues[0].name}</p>
                     </div>
                     `)
             }
@@ -48,7 +47,7 @@ function loadMore() {
 container.addEventListener("click", getValue)
 searchBtn.addEventListener("click", loadMore)
 btnLoadMore.addEventListener("click", loadMore)
-// searchEvent.addEventListener('input', debounce(loadMore, 250))
+
 window.addEventListener("keyup", (e) => {
     e.preventDefault
     if (e.code === "Enter") {
