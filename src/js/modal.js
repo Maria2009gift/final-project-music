@@ -1,12 +1,17 @@
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
-const span = document.getElementsByClassName("close")[1];
+const span = document.querySelector(".close");
 
 const BASE_ID = "https://app.ticketmaster.com/discovery/v2/events.json"
 
 function closeModal() {
     modal.style.display = "none"
 }
+
+function onBackdropClick(e) {
+        if (e.target == modal) {
+            modal.style.display = "none"
+        }}
 
 const openModal = (event) => {
     console.log(event.target.classList[0])
@@ -55,22 +60,16 @@ const openModal = (event) => {
             </div>
             <button class="inf">MORE FROM THIS AUTHOR</button>
         </div>`
+
+        const span = document.querySelector(".close");
+        span.addEventListener("click", closeModal)
         })
-
-
-
-
 
     }
 
 }
 
 document.addEventListener("click", openModal);
-modal.addEventListener("click", closeModal)
+window.addEventListener("click", onBackdropClick);
 
-// const span = document.querySelector("#end");
-// function closeModal() {
-//     modal.style.display = "none"
-// }
-// span.addEventListener("click", closeModal)
-// 
+
