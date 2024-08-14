@@ -6,7 +6,11 @@
     height: 30px;
     flex-shrink: 0;
     margin: 24px 0 0 24px;
-    background-image: url(/src/img/logo-m.svg);
+}
+
+.svg-icon-booster {
+    width: 60px;
+    height: 30px;
 }
 
 .container-header {
@@ -36,7 +40,10 @@
         width: 100px;
         height: 50px;
         margin: 40px 0 0 40px;
-        background-image: url(/src/img/logo-t.svg);
+    }
+    .svg-icon-booster {
+        width: 100px;
+        height: 50px;
     }
 }
 
@@ -53,8 +60,11 @@
     .icon-booster{
         width: 136px;
         height: 68px;
-        background-image: url(/src/img/logo-svg.svg);
-        background-repeat: no-repeat;
+    }
+
+    .svg-icon-booster {
+        width: 136px;
+        height: 68px;
     }
 }
 
